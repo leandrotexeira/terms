@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Termos e Condições — NOX (Pré-registro)</title>
+  <style>
+    :root{
+      --bg:#0f1114; --card:#121318; --muted:#bfc3c8; --accent:#6f2bdc; --gold:#e0b13a; --glass:rgba(255,255,255,0.04);
+      --radius:14px; --maxw:900px;
+    }
+    *{box-sizing:border-box}
+    body{background:linear-gradient(180deg,#070709 0%, #0b0c10 100%); color:#e9eef8; font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; line-height:1.45; padding:32px;}
+    .wrap{max-width:var(--maxw); margin:0 auto;}
+    header{display:flex;align-items:center;gap:16px;margin-bottom:18px}
+    .logo{width:56px;height:56px;border-radius:12px;background:var(--accent);display:flex;align-items:center;justify-content:center;font-weight:700;color:#fff}
+    h1{font-size:20px;margin:0}
+    p.lead{color:var(--muted);margin:8px 0 22px}
+
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.015)); padding:22px;border-radius:var(--radius); box-shadow:0 6px 24px rgba(0,0,0,0.6); border:1px solid rgba(255,255,255,0.03)}
+
+    .terms{max-height:320px; overflow:auto; padding:12px; background:var(--glass); border-radius:10px; border:1px solid rgba(255,255,255,0.02); margin-bottom:16px}
+    .terms h2{font-size:16px;margin:10px 0}
+    .terms p{color:#cfd6e3; margin:8px 0}
+    .small{font-size:13px;color:var(--muted)}
+
+    .controls{display:flex;gap:12px;align-items:center;margin-top:12px}
+    .checkbox{display:flex;align-items:center;gap:10px}
+    input[type=checkbox]{width:18px;height:18px;border-radius:4px;border:2px solid rgba(255,255,255,0.06); background:transparent; accent-color:var(--gold)}
+
+    .btn{background:linear-gradient(90deg,var(--accent),#3b2af2); color:white;padding:10px 16px;border-radius:10px;border:none;font-weight:600;cursor:pointer}
+    .btn[disabled]{opacity:.45; cursor:not-allowed}
+    .btn.secondary{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted)}
+
+    footer{margin-top:18px;color:var(--muted);font-size:13px}
+
+    /* modal */
+    .modal{position:fixed;left:0;top:0;width:100%;height:100%;display:none;align-items:center;justify-content:center;background:rgba(0,0,0,0.6);z-index:50}
+    .modal.open{display:flex}
+    .modal-card{width:calc(100% - 48px);max-width:880px;background:var(--card);border-radius:12px;padding:18px;box-shadow:0 12px 40px rgba(0,0,0,0.7);}
+    .modal-card .content{max-height:60vh;overflow:auto;padding-right:6px}
+    .close{margin-left:auto;background:transparent;border:none;color:var(--muted);font-weight:700;cursor:pointer}
+
+    @media (max-width:520px){.controls{flex-direction:column;align-items:stretch}.logo{width:48px;height:48px}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo">NOX</div>
+      <div>
+        <h1>Termos e Condições — Recompensa de Pré-registro</h1>
+        <p class="lead">Leia e aceite os termos abaixo para receber o prêmio: <strong>7 dias de acesso Premium</strong> no lançamento do NOX.</p>
+      </div>
+    </header>
+
+    <section class="card" aria-labelledby="title">
+      <div class="terms" id="termsText" tabindex="0">
+        <h2>1. Elegibilidade</h2>
+        <p>Para receber a recompensa de pré-registro, o usuário deve ter 18 anos ou mais e ter pré-registrado o aplicativo NOX através do Google Play. A oferta é válida conforme as regras da campanha e pode ser limitada por região ou quantidade, se indicado na página da campanha.</p>
+
+        <h2>2. Descrição da Recompensa</h2>
+        <p>A recompensa consiste em 7 (sete) dias de acesso ao plano NOX Premium, com todas as funcionalidades desbloqueadas, sem anúncios. O período gratuito começa a contar a partir da ativação da assinatura ou da entrega do código promocional, conforme a forma de distribuição escolhida pelo desenvolvedor.</p>
+
+        <h2>3. Entrega da Recompensa</h2>
+        <p>A entrega pode ocorrer por código promocional enviado automaticamente ou por ativação automática via integração com o Google Play (assinatura com período de teste). O desenvolvedor é responsável pela correta configuração da entrega; o Google apenas disponibiliza o recurso de pré-registro.</p>
+
+        <h2>4. Condições de Uso</h2>
+        <p>O prêmio é intransferível, não pode ser vendido e só pode ser utilizado pelo titular da conta Google que realizou o pré-registro. O uso do prêmio está sujeito às políticas do Google Play e aos Termos de Serviço do NOX.</p>
+
+        <h2>5. Renovação e Cobrança</h2>
+        <p>Se a recompensa for implementada como um período de teste em uma assinatura, a cobrança ocorrerá automaticamente ao final dos 7 dias caso o usuário não cancele a assinatura antes do término do período de avaliação, conforme as regras do Google Play.</p>
+
+        <h2>6. Cancelamento e Alterações</h2>
+        <p>O desenvolvedor ou o Google pode adiar, alterar ou cancelar a campanha a qualquer momento em caso de abuso, erro técnico ou por motivos legais. Caso a campanha seja cancelada, o usuário será informado conforme aplicável.</p>
+
+        <h2>7. Privacidade</h2>
+        <p>Ao aceitar, o usuário concorda que seu registro para pré-lançamento seja usado para envio de notificação de lançamento e para verificação do direito à recompensa. Informações pessoais são tratadas conforme a <a href="#privacy">Política de Privacidade</a> disponível neste link.</p>
+
+        <h2>8. Limitação de Responsabilidade</h2>
+        <p>Na máxima extensão permitida por lei, o NOX não será responsável por danos indiretos ou perda de dados relacionados ao uso da recompensa. O usuário concorda em isentar o desenvolvedor de quaisquer reclamações decorrentes do uso indevido do prêmio.</p>
+
+        <h2>9. Contato</h2>
+        <p>Para dúvidas sobre os termos ou problemas com a recompensa, escreva para: <strong>gratiasalvatus@gmail.com</strong>.</p>
+
+        <p class="small">Última atualização: <!-- date placeholder --> <script>document.write(new Date().toLocaleDateString('pt-BR'))</script></p>
+      </div>
+
+      <div class="controls" role="group" aria-label="Aceite dos termos">
+        <label class="checkbox">
+          <input id="acceptCheckbox" type="checkbox" />
+          <span>Li e aceito os <button id="viewFull" class="btn secondary" style="padding:6px 10px;">Termos completos</button></span>
+        </label>
+
+        <div style="margin-left:auto;display:flex;gap:10px">
+          <button id="downloadBtn" class="btn secondary">Baixar PDF</button>
+          <button id="submitBtn" class="btn" disabled>Confirmar e Receber Prêmio</button>
+        </div>
+      </div>
+
+      <footer>
+        Ao confirmar, você concorda com os Termos de Serviço do NOX e com a Política de Privacidade. Consulte também as regras da campanha no Google Play.
+      </footer>
+    </section>
+  </div>
+
+  <!-- Modal com texto completo (mesma cópia, maior área) -->
+  <div id="modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-card">
+      <div style="display:flex;align-items:center;gap:12px;margin-bottom:8px">
+        <h3 id="modalTitle">Termos e Condições — NOX</h3>
+        <button id="closeModal" class="close">FECHAR</button>
+      </div>
+      <div class="content">
+        <!-- reutiliza o conteúdo principal -->
+        <div>
+          <h4>Condições da Recompensa</h4>
+          <p>O conteúdo completo dos Termos está disponível nesta mesma página. Leia atentamente antes de aceitar.</p>
+          <p class="small">Você pode baixar ou imprimir estes termos para seu registro.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const checkbox = document.getElementById('acceptCheckbox');
+    const submitBtn = document.getElementById('submitBtn');
+    const viewFull = document.getElementById('viewFull');
+    const modal = document.getElementById('modal');
+    const closeModal = document.getElementById('closeModal');
+    const downloadBtn = document.getElementById('downloadBtn');
+
+    checkbox.addEventListener('change', ()=>{
+      submitBtn.disabled = !checkbox.checked;
+    });
+
+    viewFull.addEventListener('click', ()=>{
+      modal.classList.add('open');
+    });
+    closeModal.addEventListener('click', ()=>{
+      modal.classList.remove('open');
+    });
+
+    // Simples função para baixar o texto atual em HTML como .pdf via janela de impressão
+    downloadBtn.addEventListener('click', ()=>{
+      window.print();
+    });
+
+    // Simula envio: aqui você pode integrar com seu backend para registrar o aceite
+    submitBtn.addEventListener('click', ()=>{
+      // Exemplo: enviar fetch para seu endpoint que grava o aceite
+      // fetch('/api/aceite', {method:'POST', body: JSON.stringify({userId: 'REPLACE', acceptedAt: new Date()})})
+      //  .then(()=> window.location.href = '/obrigado')
+
+      alert('Obrigado! Seu aceite foi registrado. Você receberá instruções para ativar os 7 dias de Premium.');
+
+      // Opcional: marcar localmente que o usuário aceitou
+      localStorage.setItem('nox_pre_registro_aceite', JSON.stringify({accepted:true, at: new Date().toISOString()}));
+    });
+  </script>
+</body>
+</html>
